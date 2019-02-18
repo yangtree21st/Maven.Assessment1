@@ -5,11 +5,11 @@ import java.util.Arrays;
 import java.util.List;
 
 /**
- * Created by leon on 2/16/18.
+ * Created by Yang on 02/16/19.
  */
 public class PetOwner {
-    String name;
-    Pet[] pets = new Pet[0];
+    protected String name;
+    protected Pet[] pets = new Pet[0];
     /**
      * @param name name of the owner of the Pet
      * @param pets array of Pet object
