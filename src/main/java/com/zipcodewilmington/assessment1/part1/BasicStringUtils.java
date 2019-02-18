@@ -12,7 +12,7 @@ public class BasicStringUtils {
         String a = "";
 
         return a = str.substring(0, 1).toUpperCase() + str.substring(1);
-        ;
+
     }
 
     /**
@@ -41,9 +41,9 @@ public class BasicStringUtils {
      * @return string with identical contents excluding first and last character
      */
     public static String removeFirstAndLastCharacter(String str) {
-        int lastC = str.indexOf(str.length() - 1);
+        int lastC = str.length() - 1;
         String fir = str.substring(0, 1);
-       
+
         String output = str.substring(1, lastC);
 
 
