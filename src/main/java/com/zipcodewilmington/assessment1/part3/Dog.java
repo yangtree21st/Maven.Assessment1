@@ -10,6 +10,7 @@ public class Dog extends Pet {
      */
 
     public Dog(String name, Integer age) {
+
         super(name, age);
     }
 
@@ -17,6 +18,7 @@ public class Dog extends Pet {
      * @param age age of this dog
      */
     public Dog(Integer age) {
+
         super("Dog name", age);
     }
 
@@ -24,6 +26,7 @@ public class Dog extends Pet {
      * @param name name of this dog
      */
     public Dog(String name) {
+
         super(name);
     }
 

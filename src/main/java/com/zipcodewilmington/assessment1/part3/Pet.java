@@ -1,16 +1,16 @@
 package com.zipcodewilmington.assessment1.part3;
 
 /**
- * Created by leon on 2/16/18.
+ * Created by yang on 2/18/18.
  */
 public abstract class Pet implements Animal {
     /**
      * nullary constructor
      * by default, pet has age of 0; name of "";
      */
-    String name;
-    Integer age;
-    PetOwner owner;
+    protected  String name ="";
+    protected Integer age=0 ;
+    protected PetOwner owner;
 
     /**
      * nullary constructor
@@ -25,7 +25,7 @@ public abstract class Pet implements Animal {
      * @param name name of this pet
      */
     public Pet(String name) {
-        this.age = 0;
+
         this.name = name;
     }
 
@@ -34,7 +34,7 @@ public abstract class Pet implements Animal {
      * @param age age of this pet
      */
     public Pet(int age) {
-        this.name = "";
+
         this.age = age;
     }
 
@@ -51,6 +51,7 @@ public abstract class Pet implements Animal {
      * @return name of this pet
      */
     public String getName() {
+
         return name;
     }
 
@@ -58,6 +59,7 @@ public abstract class Pet implements Animal {
      * @return age of this pet
      */
     public Integer getAge() {
+
         return age;
     }
 
@@ -73,6 +75,7 @@ public abstract class Pet implements Animal {
      * @return PetOwner object whose composite `pets` collection contains this Pet instance
      */
     public PetOwner getOwner() {
+
         return owner;
     }
 }
